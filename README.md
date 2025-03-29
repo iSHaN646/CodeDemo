@@ -1,7 +1,15 @@
 # SOLID Principles
 
 ## Introduction
-When joining a new project, managing a complex codebase can be challenging. Without proper design patterns, the code can become unmanageable, making it hard to modify or extend. To address this, our team lead has asked us to study the SOLID principles and refactor the codebase accordingly. SOLID is a set of five object-oriented design principles that help developers create scalable, maintainable, and flexible software.
+The SOLID principles are five fundamental design guidelines that help developers create maintainable, scalable, and robust object-oriented software. These principles were introduced by Robert C. Martin (Uncle Bob) and are widely used in software development to ensure code quality and flexibility. By following SOLID principles, developers can reduce code complexity, improve reusability, and make modifications with minimal risk of introducing bugs. These principles include:
+
+1. **Single Responsibility Principle (SRP)** - A class should have only one reason to change.
+2. **Open/Closed Principle (OCP)** - A class should be open for extension but closed for modification.
+3. **Liskov Substitution Principle (LSP)** - Subtypes must be replaceable by their base types.
+4. **Interface Segregation Principle (ISP)** - Clients should not be forced to depend on methods they do not use.
+5. **Dependency Inversion Principle (DIP)** - High-level modules should depend on abstractions, not concrete implementations.
+
+Understanding and applying these principles help in designing clean and efficient codebases, making development and maintenance easier.
 
 ## SOLID Principles
 
