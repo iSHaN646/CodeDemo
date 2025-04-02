@@ -1,145 +1,23 @@
-# SOLID Principles
+# Prevention of Sexual Harassment
 
-## Introduction
-The SOLID principles are five fundamental design guidelines that help developers create maintainable, scalable, and robust object-oriented software. These principles were introduced by Robert C. Martin (Uncle Bob) and are widely used in software development to ensure code quality and flexibility. By following SOLID principles, developers can reduce code complexity, improve reusability, and make modifications with minimal risk of introducing bugs. These principles include:
+## 1. What kinds of behaviour cause sexual harassment?
 
-1. **Single Responsibility Principle (SRP)** - A class should have only one reason to change.
-2. **Open/Closed Principle (OCP)** - A class should be open for extension but closed for modification.
-3. **Liskov Substitution Principle (LSP)** - Subtypes must be replaceable by their base types.
-4. **Interface Segregation Principle (ISP)** - Clients should not be forced to depend on methods they do not use.
-5. **Dependency Inversion Principle (DIP)** - High-level modules should depend on abstractions, not concrete implementations.
+Sexual harassment includes any unwelcome actions, words, or gestures of a sexual nature that make someone feel uncomfortable, scared, or disrespected. This can happen in places like work, school, or public areas. Here are some examples:
 
-Understanding and applying these principles help in designing clean and efficient codebases, making development and maintenance easier.
+- **Unwanted Comments or Jokes:** Making sexual jokes, teasing someone about their body, or saying inappropriate things.
+- **Physical Touch:** Touching someone without their permission, like patting, pinching, or any kind of unwanted physical contact.
+- **Inappropriate Pictures or Videos:** Showing or sharing sexual images or content that makes others feel uncomfortable.
+- **Offering Favors in Exchange for Something:** Asking for sexual favors in return for job promotions, better grades, or other benefits (this is called "quid pro quo" harassment).
+- **Creating a Hostile Environment:** Making someone feel unsafe or uncomfortable regularly, even without direct physical contact, through behavior, comments, or actions.
 
-## SOLID Principles
+Basically, if someone feels uneasy or disrespected because of another person's actions, it might be considered sexual harassment.
 
-### 1. Single Responsibility Principle (SRP)
-* A class should have only one reason to change, meaning it should have only one job.
-* This principle helps in making the code more modular and easier to understand and maintain.
-* Example:
-  ```java
-  class Report {
-      void generateReport() {
-          // Code to generate report
-      }
-  }
-  
-  class ReportPrinter {
-      void printReport(Report report) {
-          // Code to print report
-      }
-  }
-  ```
-  Here, `Report` is responsible only for generating the report, while `ReportPrinter` handles printing it, following SRP.
+## 2. What would you do in case you face or witness any incident or repeated incidents of such behaviour?
 
-### 2. Open/Closed Principle (OCP)
-* A class should be open for extension but closed for modification.
-* This means we should be able to add new functionality without changing existing code, reducing the risk of introducing bugs.
-* Example:
-  ```java
-  interface Payment {
-      void pay();
-  }
-  
-  class CreditCardPayment implements Payment {
-      public void pay() {
-          // Payment logic for credit card
-      }
-  }
-  
-  class PayPalPayment implements Payment {
-      public void pay() {
-          // Payment logic for PayPal
-      }
-  }
-  ```
-  Here, new payment methods can be added by creating new classes implementing `Payment` without modifying existing code.
+If you experience or witness sexual harassment, consider the following steps:
 
-### 3. Liskov Substitution Principle (LSP)
-* Subtypes must be replaceable by their base types without altering program behavior.
-* This ensures that derived classes extend base classes without breaking functionality.
-* Example:
-  ```java
-  class Bird {
-      void fly() {
-          System.out.println("This bird can fly");
-      }
-  }
-  
-  class Sparrow extends Bird {}
-  
-  class Penguin extends Bird {
-      @Override
-      void fly() {
-          throw new UnsupportedOperationException("Penguins can't fly");
-      }
-  }
-  ```
-  Here, `Penguin` violates LSP because it cannot fly, unlike other `Bird` types. A better approach would be to create separate interfaces for flying and non-flying birds.
-
-### 4. Interface Segregation Principle (ISP)
-* Clients should not be forced to implement interfaces they do not use.
-* Instead of having one large interface, break it into smaller ones, so classes only implement what they need.
-* Example:
-  ```java
-  interface Printer {
-      void print();
-  }
-  
-  interface Scanner {
-      void scan();
-  }
-  
-  class AllInOnePrinter implements Printer, Scanner {
-      public void print() {
-          // Print logic
-      }
-      
-      public void scan() {
-          // Scan logic
-      }
-  }
-  
-  class SimplePrinter implements Printer {
-      public void print() {
-          // Print logic
-      }
-  }
-  ```
-  Here, `SimplePrinter` only implements the `Printer` interface without unnecessary scan functionality, following ISP.
-
-### 5. Dependency Inversion Principle (DIP)
-* High-level modules should not depend on low-level modules. Both should depend on abstractions.
-* Abstractions should not depend on details. Details should depend on abstractions.
-* Example:
-  ```java
-  interface Database {
-      void connect();
-  }
-  
-  class MySQLDatabase implements Database {
-      public void connect() {
-          // MySQL connection logic
-      }
-  }
-  
-  class Application {
-      private Database database;
-      
-      public Application(Database database) {
-          this.database = database;
-      }
-      
-      void start() {
-          database.connect();
-      }
-  }
-  ```
-  Here, `Application` depends on `Database` abstraction rather than a specific database implementation, making it more flexible.
-
-## Conclusion
-Applying SOLID principles enhances the maintainability, scalability, and readability of a project. It helps in writing cleaner, more reusable, and testable code. By refactoring our codebase using these principles, we can ensure that our software is robust and easier to extend in the future.
-
-## References
-* [DigitalOcean - SOLID Principles](https://www.digitalocean.com/community/conceptual_articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design)
-* [SOLID Principles YouTube Playlist](https://www.youtube.com/playlist?list=PL6n9fhu94yhXjG1w2blMXUzyDrZ_eyOme)
+- **Address the behaviour directly:** If safe, communicate to the harasser that their conduct is unwelcome and must stop.​
+- **Report the incident:** Notify your organization's designated authority, such as the Human Resources department or the Internal Complaints Committee (ICC), following the procedures outlined in your organization's Prevention of Sexual Harassment (PoSH) policy.​
+- **Document the incidents:** Keep detailed records of each occurrence, including dates, times, locations, individuals involved, and any witnesses.​
+- **Seek support:** Reach out to trusted colleagues, friends, or professional support services to discuss the situation and receive guidance.​
+- **Utilize external resources:** If internal resolution is insufficient, consider contacting external bodies such as the Sexual Harassment Redressal Committee or legal authorities for further assistance.
